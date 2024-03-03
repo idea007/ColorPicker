@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:background="@color/white"
+    tools:ignore="ResourceName">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_color_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="16dp"
+            app:strokeWidth="0dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="8dp">
+
+                <TextView
+                    android:id="@+id/tv_color_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Picker"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    tools:text="哈哈哈" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tv_color_mode"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_expand_more_24px" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_nums_container"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/mcv_color_mode"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="4dp"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_zero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="36dp"
+                    android:background="@null"
+                    android:hint="hex"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    tools:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_one"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/md_divider_one"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="3dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tiet_one"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_two"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/md_divider_one"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/md_divider_two"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="3dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tiet_two"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_three"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/md_divider_two"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/md_divider_three"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="3dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tiet_three"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_four"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/md_divider_three"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/md_divider_four"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="3dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tiet_four"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_five"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/md_divider_four"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.dafay.demo.lib.widget.RoundImageView
+                    android:id="@+id/iv_preview_color"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="#ff0000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:radius="4dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

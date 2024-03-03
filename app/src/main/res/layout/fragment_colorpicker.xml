@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.dafay.demo.colorpicker.ColorModeUniteView
+        android:id="@+id/uv_color_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.dafay.demo.colorpicker.SaturationEditView
+        android:id="@+id/sv_saturation"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        tools:layout_marginTop="-12dp" />
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_slider_hue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:thumbColor="#00000000"
+        app:thumbStrokeColor="@color/white"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="21dp" />
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_slider_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:thumbColor="#00000000"
+        app:thumbStrokeColor="@color/white"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="21dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+</LinearLayout>

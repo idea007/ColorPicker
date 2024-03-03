@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_hue_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbColor="#00000000"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="21dp" />
+
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_hue_slider_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tooltipText="哈哈哈"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbColor="#00000000"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="6dp" />
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_hue_slider_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="6dp" />
+
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_alpha_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbColor="#00000000"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="21dp" />
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_alpha_slider_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbColor="#00000000"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="6dp" />
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_alpha_slider_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="6dp" />
+
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:id="@+id/s_slider_outer_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#10000000"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbColor="#00000000"
+        app:thumbStrokeWidth="2dp"
+        app:trackHeight="21dp" />
+
+
+    <com.dafay.demo.lib.widget.slider.Slider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#10000000"
+        app:labelStyle="@style/Widget.MaterialComponents.Tooltip"
+        app:thumbColor="#00000000"
+        app:thumbStrokeWidth="2dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+</LinearLayout>
